@@ -11,7 +11,7 @@ dado la siguiente plantilla de diseño:
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="24dp"
-        android:text="@string/question_text" />”
+        android:text="@string/question_text" />
 		<LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

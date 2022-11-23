@@ -36,4 +36,4 @@ Se pide crear una aplicación para Android que simule un juego de preguntas y re
 - El juego constará de tres preguntas organizadas en tres "Activity".
 - Deberá controlar el numero de preguntas acertadas mediante el envío de extras entre actividades.
 - Al finalizar el juego habrá una cuarta "activity" donde mostrará el número de preguntas acertadas.
-- OPCIONAL: se puede mostrar un snackbar en cada activity diciendo si has acertado o no.
+- OPCIONAL: se puede mostrar un snackbar en cada activity diciendo si has acertado o no y la cuenta de preguntas acertadas.

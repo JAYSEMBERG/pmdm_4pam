@@ -37,3 +37,38 @@ Se pide crear una aplicación para Android que simule un juego de preguntas y re
 - Deberá controlar el numero de preguntas acertadas mediante el envío de extras entre actividades.
 - Al finalizar el juego habrá una cuarta "activity" donde mostrará el número de preguntas acertadas.
 - OPCIONAL: se puede mostrar un snackbar en cada activity diciendo si has acertado o no y la cuenta de preguntas acertadas.
+
+
+## VERSION 2
+La vesrión incluye solo una activitiy y cambiaremos el enlace entre el codigo y el layout por LayoutInflate
+
+La linea 
+`setContentView(R.layout.activity_main)`
+
+debe ser reemplazada por:
+
+```java
+binding = ActivityMainBinding.inflate(layoutInflater)
+setContentView(binding.root)
+```
+
+Y el acceso a los elementos del layout se hace de la siguiente manera:
+1. Eliminados las referencias de `findViewById`
+   `botonVerdadero = findViewById(R.id.boton_verdadero)`
+   `botonFalso = findViewById(R.id.boton_falso)`
+2. Y en el clickListner accedemos directamente al elemento por bindeo:
+    Reemplazamos `botonVerdadero.setOnClickListener {`  por
+    `binding.botonVerdadero.setOnClickListener { `.
+
+La lista de preguntas es recomendable que se guarde en HashMap o en una lista:
+
+```
+private val bancoPreguntas = listOf(
+	Question(R.string.pregunta1, true),
+	Question(R.string.pregunta2, true),
+	Question(R.string.pregunta3, false),
+	Question(R.string.pregunta4, false),
+	Question(R.string.pregunta5, true),
+	Question(R.string.pregunta16, true))
+```
+

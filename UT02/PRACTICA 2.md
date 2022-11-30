@@ -40,7 +40,7 @@ Se pide crear una aplicación para Android que simule un juego de preguntas y re
 
 
 ## VERSION 2
-La vesrión incluye solo una activitiy y cambiaremos el enlace entre el codigo y el layout por LayoutInflate
+La versión incluye solo una activitiy y cambiaremos el enlace entre el codigo y el layout por LayoutInflate
 
 La linea 
 `setContentView(R.layout.activity_main)`
@@ -71,6 +71,59 @@ private val bancoPreguntas = listOf(
 	Question(R.string.pregunta5, true),
 	Question(R.string.pregunta16, true))
 ```
+
+El código quedaría así:
+
+```java
+package es.ejemplo.android.preguntas;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+import java.util.HashMap;
+
+import es.ejemplo.android.preguntas.databinding.ActivityMainBinding;
+import es.ejemplo.android.preguntas.databinding.SegundoLayoutBinding;
+
+public class MainActivity extends AppCompatActivity {
+    Button verdadero, falso;
+    HashMap<String, String> respuestas = new HashMap<String, String>();
+    private ActivityMainBinding binding;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
+
+        respuestas.put("pregunta1" , "verdadero");
+        respuestas.put("pregunta2" , "falso");
+        respuestas.put("pregunta3" , "verdadero");
+        
+
+        verdadero.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Controlar en que pregunta estoy y ver si es correcto o no
+            }
+        });
+
+        falso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Controlar en que pregunta estoy y ver si es correcto o no
+            }
+        });
+    }
+}
+```
+
 #### RECURSOS
 https://jarroba.com/inflate-en-android-inflar-y-adjuntar-views/
 

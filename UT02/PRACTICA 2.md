@@ -81,6 +81,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 
 import java.util.HashMap;
@@ -90,6 +91,7 @@ import es.ejemplo.android.preguntas.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
     HashMap<String, String> respuestas = new HashMap<String, String>();
     private ActivityMainBinding binding;
+    private int contador=1;
 
 
     @Override
@@ -108,6 +110,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Controlar en que pregunta estoy y ver si es correcto o no
+                comprobar_pregunta(contador ,"verdadero" );
+                contador++;
+
             }
         });
 
@@ -115,8 +120,26 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Controlar en que pregunta estoy y ver si es correcto o no
+                comprobar_pregunta(contador ,"falso" );
+                contador++;
             }
         });
+    }
+
+    private boolean comprobar_pregunta (int contador, String pulsado) {
+        String preg = "pregunta" + contador;
+        if (respuestas.get(preg).equals(pulsado)) {
+            Toast.makeText(MainActivity.this,
+                    "CORRECTO!!!",
+                    Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        else {
+            Toast.makeText(MainActivity.this,
+                    "NOOOOO !!!",
+                    Toast.LENGTH_SHORT).show();
+            return false;
+        }
     }
 }
 ```

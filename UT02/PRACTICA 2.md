@@ -81,16 +81,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+
 
 import java.util.HashMap;
 
 import es.ejemplo.android.preguntas.databinding.ActivityMainBinding;
-import es.ejemplo.android.preguntas.databinding.SegundoLayoutBinding;
 
 public class MainActivity extends AppCompatActivity {
-    Button verdadero, falso;
     HashMap<String, String> respuestas = new HashMap<String, String>();
     private ActivityMainBinding binding;
 
@@ -105,16 +102,16 @@ public class MainActivity extends AppCompatActivity {
         respuestas.put("pregunta1" , "verdadero");
         respuestas.put("pregunta2" , "falso");
         respuestas.put("pregunta3" , "verdadero");
-        
 
-        verdadero.setOnClickListener(new View.OnClickListener() {
+
+        binding.verdadero.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Controlar en que pregunta estoy y ver si es correcto o no
             }
         });
 
-        falso.setOnClickListener(new View.OnClickListener() {
+        binding.falso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Controlar en que pregunta estoy y ver si es correcto o no

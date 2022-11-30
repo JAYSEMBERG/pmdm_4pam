@@ -71,4 +71,22 @@ private val bancoPreguntas = listOf(
 	Question(R.string.pregunta5, true),
 	Question(R.string.pregunta16, true))
 ```
+#### RECURSOS
+https://jarroba.com/inflate-en-android-inflar-y-adjuntar-views/
 
+https://developer.android.com/topic/libraries/view-binding#java
+
+https://devexperto.com/view-binding/
+
+https://developer.android.com/guide/topics/resources/layout-resource
+
+## VERSION 3
+
+Vamos a implementar las preguntas y respuestas en un ViewModel, de tal manera que implementaremos la capa de modelo para la gestión de datos.
+
+#### RECURSOS
+https://developer.android.com/topic/libraries/architecture/viewmodel?hl=es-419#java
+
+https://developer.android.com/jetpack/androidx/releases/lifecycle#groovy
+
+https://medium.com/androiddevelopers/viewmodels-a-simple-example-ed5ac416317e

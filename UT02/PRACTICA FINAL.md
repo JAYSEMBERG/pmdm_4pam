@@ -43,4 +43,11 @@ Se pide crear una aplicación para Android que simule un juego de preguntas y re
 - (2 puntos) Incluir imágenes, sonidos y/o videos en las preguntas.
 - (2 puntos) En la pantalla de inicio, se debe pedir un nombre, y una vez finalizado el juego, se suben a firestore los resultados junto con la puntuación para llevar un registro de participantes.
 
-
+### RECURSOS
+- https://jarroba.com/inflate-en-android-inflar-y-adjuntar-views/
+- https://developer.android.com/topic/libraries/view-binding#java
+- https://devexperto.com/view-binding/
+- https://developer.android.com/guide/topics/resources/layout-resource
+- https://developer.android.com/topic/libraries/architecture/viewmodel?hl=es-419#java
+- https://developer.android.com/jetpack/androidx/releases/lifecycle#groovy
+- https://medium.com/androiddevelopers/viewmodels-a-simple-example-ed5ac416317e

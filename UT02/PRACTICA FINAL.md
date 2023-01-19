@@ -36,7 +36,7 @@ Se pide crear una aplicación para Android que simule un juego de preguntas y re
 - El juego debe tener entre 15 y 20 preguntas.
 - (1 punto) El juego constará de tres tres "Activity": Una para la pantalla inicial, otra para la pantalla de las preguntas y otra para mostrar los resultados. 
 - (1 punto) Para gestionar los elementos de la aplicación, se utilizará el método de `binding`. 
-- (2 puntos) Es estado del juego (pregunta actual, aciertos, ...) se almacenará en la estructura que el alumno considere pero implementada en un `ViewModel`. 
+- (2 puntos) Es estado del juego (pregunta actual, aciertos, nombre usuario, ...) se almacenará en la estructura que el alumno considere pero implementada en un `ViewModel`. 
 - (2 puntos) Las preguntas se obtendrán de una colección de elementos de [Google firestore](https://console.firebase.google.com/u/0/). Cada pregunta será un objeto que modelizará el elemento de la colección descargado de Firestore. 
   - El objeto que modele la pregunta debe tener, al menos, los siguientes atributos: id(sera un indice con el número de orden de la pregunta), textoPregunta, respUno, respDos, respTres, respCuatro, respCorrecta.
 - (1 punto) Se debe mostrar un `snackbar` en cada activity diciendo si has acertado o no y la cuenta de preguntas acertadas.

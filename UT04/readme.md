@@ -21,6 +21,6 @@ de preguntas con las siguientes características:
 
 - [https://github.com/code-bajju/flutter-quiz-app-stranger-things](https://github.com/code-bajju/flutter-quiz-app-stranger-things)
 
-- [https://github.com/code-bajju/flutter-quiz-app-stranger-things](https://javiercbk.github.io/json_to_dart/)
+- [[https://github.com/code-bajju/flutter-quiz-app-stranger-things](https://javiercbk.github.io/json_to_dart/)](https://javiercbk.github.io/json_to_dart/)
 
-- [https://github.com/code-bajju/flutter-quiz-app-stranger-things](https://docs.flutter.dev/cookbook/networking/fetch-data)
+- [[https://github.com/code-bajju/flutter-quiz-app-stranger-things]()](https://docs.flutter.dev/cookbook/networking/fetch-data)

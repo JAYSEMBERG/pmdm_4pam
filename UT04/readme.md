@@ -14,13 +14,13 @@ de preguntas con las siguientes características:
 - En la página principal se llevara un conctador con el índice de la pregunta actual y el número de preguntas acertadas.
 - Cuando finalicen todas las preguntas, debe mostrar un toast o un snackbar para decidir si se quiere salir o reiniciar.
 
-###EXTRA:
+### EXTRA:
 -subir los resultados al servicio REST
 
-###RECURSOS: 
+### RECURSOS: 
 
-- [](https://github.com/code-bajju/flutter-quiz-app-stranger-things)
+- [https://github.com/code-bajju/flutter-quiz-app-stranger-things](https://github.com/code-bajju/flutter-quiz-app-stranger-things)
 
-- [](https://javiercbk.github.io/json_to_dart/)
+- [https://github.com/code-bajju/flutter-quiz-app-stranger-things](https://javiercbk.github.io/json_to_dart/)
 
-- [](https://docs.flutter.dev/cookbook/networking/fetch-data)
+- [https://github.com/code-bajju/flutter-quiz-app-stranger-things](https://docs.flutter.dev/cookbook/networking/fetch-data)
